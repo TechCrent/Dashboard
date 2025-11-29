@@ -6,125 +6,166 @@
     <link rel="stylesheet" href="/src/style.css" />
     <title>dashboard</title>
   </head>
-  <body class="grid grid-row md:grid-cols-[1fr_4fr]">
-    <div class="bg-green-500 hidden md:flex flex-col h-screen">
-      <div class="border-black border-b">
-        <div class="p-5">
-          <h1>Mondays</h1>
-          <p>Dashboard</p>
-          <p>Projects</p>
-          <p>My Task</p>
-          <p>Chats</p>
-          <p>Documents</p>
-          <p>Receipts</p>
+  <!-- Whole Screen-->
+  <body class="">
+    <div class="grid grid-row md:grid-cols-[1fr_4fr] p-10">
+      <!-- Menu Bar Section -->
+      <div
+        class="bg-green-500 hidden md:flex flex-col h-auto rounded-tl-4xl rounded-bl-4xl"
+      >
+        <div class="border-black border-b">
+          <div class="p-5">
+            <h1>Mondays</h1>
+            <p>Dashboard</p>
+            <p>Projects</p>
+            <p>My Task</p>
+            <p>Chats</p>
+            <p>Documents</p>
+            <p>Receipts</p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="p-5">
-          <h2>Projects</h2>
-          <p>Event Planning</p>
-          <p>Breakfast Plan</p>
-          <div>
-            <p></p>
-            <p></p>
+        <div>
+          <div class="p-5">
+            <h2>Projects</h2>
+            <p>Event Planning</p>
+            <p>Breakfast Plan</p>
+            <div>
+              <p></p>
+              <p></p>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Main Section-->
+      <main
+        class="bg-blue-500 md:rounded-tl-none md:rounded-bl-none rounded-4xl"
+      >
+        <header class="flex border-b border-black justify-between px-5">
+          <div>Search or type a command</div>
+          <div class="flex gap-2">
+            <button>+ New Project</button>
+            <p>X</p>
+            <p>X</p>
+            <!-- MENU BAR -->
+            <p class="md:hidden">X</p>
+          </div>
+        </header>
+        <!-- AREA BEFORE CONTAINERS-->
+        <!-- Main container-->
+        <div class="flex justify-between p-5">
+          <!-- Date and Greeting-->
+          <div class="flex flex-col gap-2">
+            <p>Thursday 20th February</p>
+            <p>Good Evening! John,</p>
+          </div>
+          <!-- Share and Add task button-->
+          <div class="flex gap-2">
+            <p class="outline outline-red-500 h-fit">Share</p>
+            <p class="outline outline-red-500 h-fit">+ Add Task</p>
+          </div>
+        </div>
+        <!-- Section before containers-->
+        <div
+          class="pb-5 p-5 flex justify-center items-center md:block md:w-fit"
+        >
+          <div class="flex gap-2 outline outline-slate-400">
+            <p>12hrs Time Saved</p>
+            <p>24 Projects Completed</p>
+            <p>7 Projects in-progress</p>
+          </div>
+        </div>
+        <!-- CONTAINERS-->
+        <div class="">
+          <section class="p-5 grid grid-cols-2 grid-rows-5 mx-auto w-fit gap-0">
+            <div class="flex col-span-2 border border-black justify-between">
+              <!-- Row 1-->
+              <div class="flex gap-2">
+                <p>My Projects</p>
+                <p>This Week</p>
+              </div>
+              <div>
+                <p>See All</p>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="border border-black">
+              <p>Task Name</p>
+            </div>
+            <div class="border border-black flex gap-2">
+              <p>Assign</p>
+              <p>Status</p>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="border border-black">
+              <p>Help DStudio get more customers</p>
+            </div>
+            <div class="border border-black">
+              <p>Phoenix Winters</p>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="border border-black">
+              <p>Plan a trip</p>
+            </div>
+            <div class="border border-black">
+              <p>Cohen Merritt</p>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="border border-black">
+              <p>Return a package</p>
+            </div>
+            <div class="border border-black">
+              <p>Lukas Junaez</p>
+            </div>
+          </section>
+          <section class="p-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est
+            autem ipsam exercitationem ratione repellendus obcaecati deleniti
+            quae aut culpa consequuntur, maiores harum veritatis minima?
+            Laboriosam harum enim dicta optio. Repudiandae distinctio porro
+            dolorum, culpa unde, molestiae maiores ad alias fugit asperiores
+            deserunt! Numquam excepturi laboriosam quaerat non, consequuntur at
+            cumque necessitatibus! Voluptatem voluptatibus ad nulla
+            exercitationem maxime aut ex. Eaque quis quisquam laudantium quos
+            eius, dolore quo magni veritatis aliquid, molestias sit nemo
+            repudiandae animi quas commodi officiis saepe obcaecati, nesciunt
+            vitae aspernatur hic sed possimus similique. Voluptate, at. Adipisci
+            qui ea earum iste consequatur beatae deleniti laudantium doloribus
+            nam, voluptate iure, voluptates mollitia libero culpa consequuntur
+            numquam veniam aperiam dignissimos, veritatis ad vel. Labore illum
+            dolorem ipsum quidem. Adipisci quo illo blanditiis quos iste fugit
+            ad. Repellat provident facere amet ullam? Error eveniet quis
+            molestiae optio debitis? Eligendi id ad facilis ex accusantium iure,
+            ratione recusandae! Dolorum, odit.
+          </section>
+          <section class="p-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+            rerum cum voluptatem blanditiis quod nam ipsam earum optio deserunt
+            officia. Mollitia culpa sit beatae praesentium consectetur quae
+            autem, provident excepturi! Doloremque amet voluptatem quas a
+            cupiditate earum. Esse, possimus ex ab quaerat fugit dolorem cum
+            perferendis iure. Cupiditate pariatur beatae praesentium dolore
+            dolorum, distinctio sed provident, quia assumenda quam dignissimos.
+            Libero quae consequatur alias velit repudiandae, deleniti
+            praesentium placeat sunt commodi asperiores ipsa, consequuntur
+            similique vel voluptate quos. Recusandae iure aliquam sapiente sint
+            eum laudantium voluptas maxime sit quibusdam porro? A at aliquam
+            quis et, culpa ea aspernatur? Mollitia necessitatibus corporis
+            aspernatur. Eaque consectetur rem odio, maxime a veritatis ab at aut
+            labore sunt culpa laboriosam natus maiores. Explicabo, vero? Debitis
+            modi at eos quis facere architecto voluptatibus, perferendis dolor
+            ipsum voluptate dolores illum quidem labore atque culpa, nostrum qui
+            non amet. Dolorum quas libero, architecto odio aliquam voluptates
+            necessitatibus.
+          </section>
+        </div>
+      </main>
     </div>
-    <main class="bg-blue-500">
-      <header class="flex border-b border-black justify-between px-5">
-        <div>Search or type a command</div>
-        <div class="flex gap-2">
-          <button>+ New Project</button>
-          <p>X</p>
-          <p>X</p>
-          <!-- MENU BAR -->
-          <p class="md:hidden">X</p>
-        </div>
-      </header>
-      <!-- AREA BEFORE CONTAINERS-->
-      <!-- Main container-->
-      <div class="flex justify-between p-5">
-        <!-- Date and Greeting-->
-        <div class="flex flex-col gap-2">
-          <p>Thursday 20th February</p>
-          <p>Good Evening! John,</p>
-        </div>
-        <!-- Share and Add task button-->
-        <div class="flex gap-2">
-          <p class="outline outline-red-500">Share</p>
-          <p class="outline outline-red-500">+ Add Task</p>
-        </div>
-      </div>
-      <!-- Section before containers-->
-      <div class="pb-5 p-5">
-        <div class="flex gap-2">
-          <p>12hrs Time Saved</p>
-          <p>24 Projects Completed</p>
-          <p>7 Projects in-progress</p>
-        </div>
-      </div>
-      <!-- CONTAINERS-->
-      <div class="">
-        <section class="p-5">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit optio
-          velit, ex aliquam excepturi natus explicabo dolor. Cumque, vitae illo
-          tempore minima animi officiis sit mollitia nulla esse labore
-          molestias? Tenetur autem corrupti quos iusto eveniet repudiandae,
-          numquam quo soluta eligendi porro deleniti tempore corporis quibusdam
-          vel optio velit voluptatum amet eius iste, nemo ex totam? Ad mollitia
-          sequi nesciunt. Quibusdam minima debitis ipsam temporibus, nobis rerum
-          hic blanditiis! Alias corrupti harum exercitationem et quia. Debitis
-          aliquid eius odit id eum, voluptatibus error laborum ex fuga magni,
-          culpa accusantium ratione. Maxime recusandae fugit a earum deserunt
-          vero dolore accusantium cupiditate ex sapiente libero est, labore
-          praesentium ipsa. Maiores, suscipit! Cupiditate pariatur eius
-          voluptatum eaque in suscipit quis, corporis dolorum! Reprehenderit?
-          Eos ea eligendi fugit cum molestiae velit suscipit consequatur.
-          Quaerat quibusdam accusamus molestiae velit nisi ullam pariatur
-          laboriosam! Nemo molestiae saepe voluptatibus nobis nisi obcaecati
-          architecto sed! Placeat, provident voluptatum.
-        </section>
-        <section class="p-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est
-          autem ipsam exercitationem ratione repellendus obcaecati deleniti quae
-          aut culpa consequuntur, maiores harum veritatis minima? Laboriosam
-          harum enim dicta optio. Repudiandae distinctio porro dolorum, culpa
-          unde, molestiae maiores ad alias fugit asperiores deserunt! Numquam
-          excepturi laboriosam quaerat non, consequuntur at cumque
-          necessitatibus! Voluptatem voluptatibus ad nulla exercitationem maxime
-          aut ex. Eaque quis quisquam laudantium quos eius, dolore quo magni
-          veritatis aliquid, molestias sit nemo repudiandae animi quas commodi
-          officiis saepe obcaecati, nesciunt vitae aspernatur hic sed possimus
-          similique. Voluptate, at. Adipisci qui ea earum iste consequatur
-          beatae deleniti laudantium doloribus nam, voluptate iure, voluptates
-          mollitia libero culpa consequuntur numquam veniam aperiam dignissimos,
-          veritatis ad vel. Labore illum dolorem ipsum quidem. Adipisci quo illo
-          blanditiis quos iste fugit ad. Repellat provident facere amet ullam?
-          Error eveniet quis molestiae optio debitis? Eligendi id ad facilis ex
-          accusantium iure, ratione recusandae! Dolorum, odit.
-        </section>
-        <section class="5">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-          rerum cum voluptatem blanditiis quod nam ipsam earum optio deserunt
-          officia. Mollitia culpa sit beatae praesentium consectetur quae autem,
-          provident excepturi! Doloremque amet voluptatem quas a cupiditate
-          earum. Esse, possimus ex ab quaerat fugit dolorem cum perferendis
-          iure. Cupiditate pariatur beatae praesentium dolore dolorum,
-          distinctio sed provident, quia assumenda quam dignissimos. Libero quae
-          consequatur alias velit repudiandae, deleniti praesentium placeat sunt
-          commodi asperiores ipsa, consequuntur similique vel voluptate quos.
-          Recusandae iure aliquam sapiente sint eum laudantium voluptas maxime
-          sit quibusdam porro? A at aliquam quis et, culpa ea aspernatur?
-          Mollitia necessitatibus corporis aspernatur. Eaque consectetur rem
-          odio, maxime a veritatis ab at aut labore sunt culpa laboriosam natus
-          maiores. Explicabo, vero? Debitis modi at eos quis facere architecto
-          voluptatibus, perferendis dolor ipsum voluptate dolores illum quidem
-          labore atque culpa, nostrum qui non amet. Dolorum quas libero,
-          architecto odio aliquam voluptates necessitatibus.
-        </section>
-      </div>
-    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
