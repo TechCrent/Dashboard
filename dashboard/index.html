@@ -8,18 +8,20 @@
   </head>
   <!-- Whole Screen-->
   <body class="">
-    <div class="grid grid-row md:grid-cols-[1fr_4fr] p-10">
+    <div class="grid grid-row md:grid-cols-[1fr_4fr] p-10 bg-slate-200">
       <!-- Menu Bar Section -->
       <div
-        class="bg-green-500 hidden md:flex flex-col min-h-screen rounded-tl-3xl rounded-bl-3xl"
+        class="bg-slate-50 hidden md:flex flex-col min-h-screen rounded-tl-3xl rounded-bl-3xl border-r-2 border-r-gray-200"
       >
-        <div class="border-black border-b">
+        <div class="border-b-2 border-gray-200">
           <div class="p-7 pt-3">
             <h1 class="font-serif font-semibold text-2xl pb-7">Mondays</h1>
             <div class="flex flex-col gap-2">
               <p>X Dashboard</p>
               <p>X Projects</p>
-              <p class="outline outline-black px-2 -ml-2 rounded">X My Task</p>
+              <p class="px-2 -ml-2 rounded bg-blue-500 text-slate-50">
+                X My Task
+              </p>
               <p>X Chats</p>
               <p>X Documents</p>
               <p>X Receipts</p>
@@ -29,8 +31,8 @@
         <div class="p-7 flex flex-col flex-1 justify-between">
           <div>
             <div class="flex justify-between">
-              <h2 class="pb-2">Projects</h2>
-              <p>+</p>
+              <h2 class="pb-2 font-bold">Projects</h2>
+              <p class="font-bold">+</p>
             </div>
 
             <p>X Event Planning</p>
@@ -49,18 +51,22 @@
 
       <!-- Main Section-->
       <main
-        class="bg-blue-500 md:rounded-tl-none md:rounded-bl-none rounded-3xl"
+        class="bg-slate-50 md:rounded-tl-none md:rounded-bl-none rounded-3xl"
       >
         <!-- Search bar -->
-        <header class="flex border-b border-black justify-between px-5 py-2">
+        <header
+          class="flex border-b-2 border-gray-200 justify-between px-5 py-2"
+        >
           <div
-            class="outline flex gap-8 p-1 items-center md:w-1/3 rounded-2xl px-2"
+            class="flex gap-8 p-1 items-center md:w-1/3 rounded-2xl px-2 bg-gray-200"
           >
             <p class="text-sm">X Search or type a command</p>
-            <button class="m-auto mr-5 outline px-2 rounded">X F</button>
+            <button class="m-auto mr-5 px-2 rounded bg-slate-50">X F</button>
           </div>
           <div class="flex gap-7 md:gap-10 justify-center items-center">
-            <button class="outline px-2 rounded">+ New Project | ↓</button>
+            <button class="bg-blue-500 text-white px-2 rounded">
+              + New Project | ↓
+            </button>
             <p>X</p>
             <p>X</p>
             <!-- MENU BAR -->
@@ -77,17 +83,17 @@
           </div>
           <!-- Share and Add task button-->
           <div class="flex gap-2 items-center">
-            <p class="px-2 outline outline-red-500 h-fit rounded">X Share</p>
-            <p class="px-2 outline outline-red-500 h-fit rounded">+ Add Task</p>
+            <p class="px-2 outline-2 outline-gray-200 h-fit rounded">X Share</p>
+            <p class="px-2 outline-2 outline-gray-200 h-fit rounded">
+              + Add Task
+            </p>
           </div>
         </div>
         <!-- Section before containers-->
         <div
           class="pb-5 p-5 flex justify-center items-center md:block md:w-fit"
         >
-          <div
-            class="flex gap-2 outline outline-slate-400 p-2 rounded-4xl px-5"
-          >
+          <div class="flex gap-2 p-2 rounded-4xl px-5 bg-gray-200">
             <p>
               X <span class="font-semibold">12hrs</span
               ><span class="text-sm">Time Saved</span>
@@ -111,20 +117,22 @@
           >
             <!-- Row 1-->
             <div
-              class="flex md:col-span-3 col-span-2 border border-black justify-between items-center rounded-t-md"
+              class="flex md:col-span-3 col-span-2 border-2 border-b-0 border-gray-200 justify-between items-center rounded-t-md"
             >
               <div class="flex gap-2 p-2 px-5">
                 <p>X My Projects</p>
-                <p>This Week</p>
+                <p class="px-2 outline-2 outline-gray-200 rounded-md">
+                  This Week
+                </p>
               </div>
               <div class="flex p-2 px-5">
-                <p class="outline outline-black px-2 rounded-2xl">See All</p>
+                <p class="bg-gray-200 px-2 rounded-2xl">See All</p>
               </div>
             </div>
 
             <!-- Row 2 -->
             <div
-              class="border border-black flex items-center px-5 justify-between"
+              class="border-2 border-gray-200 flex items-center px-5 justify-between border-b-0 border-r-0"
             >
               <div><p>X Task Name</p></div>
               <div class="flex gap-2">
@@ -132,18 +140,22 @@
                 <p>X</p>
               </div>
             </div>
-            <div class="border border-black flex gap-5 px-5 items-center">
+            <div
+              class="border-2 border-gray-200 flex gap-5 px-5 items-center border-b-0 border-r-0"
+            >
               <p>X Assign</p>
               <p class="md:hidden">X Status</p>
             </div>
             <!-- Hidden -->
-            <div class="border border-black hidden md:flex px-5 items-center">
+            <div
+              class="border-2 border-gray-200 hidden md:flex px-5 items-center border-b-0"
+            >
               <p>X Status</p>
             </div>
 
             <!-- Row 3 -->
             <div
-              class="border border-black px-5 items-center flex justify-between"
+              class="border-2 border-gray-200 px-5 items-center flex justify-between border-b-0 border-r-0"
             >
               <div><p>X Help DStudio get more customers</p></div>
               <div class="flex gap-2">
@@ -151,17 +163,21 @@
                 <p>X</p>
               </div>
             </div>
-            <div class="border border-black px-5 items-center flex">
+            <div
+              class="border-2 border-gray-200 px-5 items-center flex border-b-0 border-r-0"
+            >
               <p>X Phoenix Winters</p>
             </div>
             <!-- Hidden -->
-            <div class="border border-black hidden md:flex px-5 items-center">
-              <p class="outline outline-black rounded-2xl px-2">In Progress</p>
+            <div
+              class="border-2 border-gray-200 hidden md:flex px-5 items-center border-b-0"
+            >
+              <p class="bg-green-300 rounded-2xl px-2">In Progress</p>
             </div>
 
             <!-- Row 4 -->
             <div
-              class="border border-black px-5 items-center flex justify-between"
+              class="border-2 border-gray-200 px-5 items-center flex justify-between border-b-0 border-r-0"
             >
               <div><p>X Plan a trip</p></div>
               <div class="flex gap-2">
@@ -169,17 +185,21 @@
                 <p>X</p>
               </div>
             </div>
-            <div class="border border-black px-5 items-center flex">
+            <div
+              class="border-2 border-gray-200 px-5 items-center flex border-b-0 border-r-0"
+            >
               <p>X Cohen Merritt</p>
             </div>
             <!-- Hidden -->
-            <div class="border border-black hidden md:flex px-5 items-center">
-              <p class="outline outline-black rounded-2xl px-2">Pending</p>
+            <div
+              class="border-2 border-gray-200 hidden md:flex px-5 items-center border-b-0"
+            >
+              <p class="bg-pink-300 rounded-2xl px-2">Pending</p>
             </div>
 
             <!-- Row 5 -->
             <div
-              class="border border-black px-5 items-center flex rounded-bl-md justify-between"
+              class="border-2 border-gray-200 px-5 items-center flex rounded-bl-md justify-between border-r-0"
             >
               <div><p>X Return a package</p></div>
               <div class="flex gap-2">
@@ -188,22 +208,22 @@
               </div>
             </div>
             <div
-              class="border border-black px-5 items-center flex rounded-br-md md:rounded-none"
+              class="border-2 border-gray-200 px-5 items-center flex rounded-br-md md:rounded-none border-r-0"
             >
               <p>X Lukas Junaez</p>
             </div>
             <!-- Hidden -->
             <div
-              class="border border-black hidden md:flex px-5 items-center rounded-br-md"
+              class="border-2 border-gray-200 hidden md:flex px-5 items-center rounded-br-md"
             >
-              <p class="outline outline-black rounded-2xl px-2">Completed</p>
+              <p class="bg-blue-400 rounded-2xl px-2">Completed</p>
             </div>
           </section>
 
           <!-- SECTION 2 -->
           <section class="p-5 mx-auto w-full">
             <!-- Row 1-->
-            <div class="border border-black rounded-md">
+            <div class="border-2 border-gray-200 rounded-md">
               <div class="flex justify-between p-5">
                 <p>X Schedule</p>
                 <p>X</p>
@@ -218,7 +238,7 @@
                   <p>Tu</p>
                   <p>16</p>
                 </div>
-                <div class="outline outline-black px-1 rounded-md">
+                <div class="bg-pink-300 px-2 rounded-md">
                   <p>We</p>
                   <p>17</p>
                 </div>
@@ -242,7 +262,9 @@
 
               <!-- Row 3-->
               <div class="p-2 md:pb-4">
-                <div class="border border-black p-3 flex justify-between">
+                <div
+                  class="border-b-2 border-gray-200 p-3 flex justify-between"
+                >
                   <div class="flex">
                     <div>
                       <p class="font-black">|</p>
@@ -262,7 +284,9 @@
 
               <!-- Row 4-->
               <div class="p-2 md:pb-4">
-                <div class="border border-black p-3 flex justify-between">
+                <div
+                  class="border-b-2 border-gray-200 p-3 flex justify-between"
+                >
                   <div class="flex">
                     <div>
                       <p class="font-black">|</p>
@@ -282,7 +306,9 @@
 
               <!-- Row 5-->
               <div class="p-2 md:pb-5">
-                <div class="border border-black p-3 flex justify-between">
+                <div
+                  class="border-b-2 border-gray-200 p-3 flex justify-between"
+                >
                   <div class="flex">
                     <div>
                       <p class="font-black">|</p>
@@ -305,13 +331,15 @@
           <!-- SECTION 3 -->
           <section class="p-5 pb-10 w-full">
             <!-- Row 1-->
-            <div class="border border-black p-5 rounded-t-md">
+            <div class="border-2 border-gray-200 p-5 rounded-t-md">
               <p>X Notes</p>
             </div>
 
             <!-- Row 2-->
-            <div class="border border-black p-2 flex border-t-0 border-b-0">
-              <div class="border border-black p-3 flex">
+            <div
+              class="border-2 border-gray-200 p-2 flex border-t-0 border-b-0"
+            >
+              <div class="border-b-2 border-gray-200 p-3 flex">
                 <div>
                   <p class="font-black">|</p>
                 </div>
@@ -326,8 +354,10 @@
             </div>
 
             <!-- Row 3-->
-            <div class="border border-black p-2 flex border-t-0 border-b-0">
-              <div class="border border-black p-3 flex">
+            <div
+              class="border-2 border-gray-200 p-2 flex border-t-0 border-b-0"
+            >
+              <div class="border-b-2 border-gray-200 p-3 flex">
                 <div>
                   <p class="font-black">|</p>
                 </div>
@@ -342,8 +372,10 @@
             </div>
 
             <!-- Row 4 -->
-            <div class="border border-black p-2 flex rounded-b-md border-t-0">
-              <div class="border border-black p-3 flex">
+            <div
+              class="border-2 border-gray-200 p-2 flex rounded-b-md border-t-0"
+            >
+              <div class="p-3 flex">
                 <div>
                   <p class="font-black">|</p>
                 </div>
